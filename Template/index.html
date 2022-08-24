@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>کارتونیو</title>
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loading-icon"></div>
+    </div>
+
+    <div class="header">
+      <div class="container header-container">
+        <div class="row">
+          <div class="col-md-4 site-logo">
+            <a href="#"><img src="pics/logo2.png" alt="" /></a>
+          </div>
+
+          <div class="col-md-5 nav-container text-center">
+            <ul class="navigation">
+              <li><a href="#section-home">خانه</a></li>
+              <li><a href="#section-about">درباره ما</a></li>
+              <li><a href="#section-contact">ثبت نام</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 social-container text-center">
+            <ul class="socials">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section-home" class="home-wrap">
+      <div class="home-overlay"></div>
+      <div class="container">
+        <div class="col-md-12 counter-wrap text-center">
+          <div class="counter">
+            <div class="time"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-wrap">
+        <div class="container banner-container">
+          <div class="row">
+            <div class="col-md-6 banner-right text-center">
+              <h2 class="welcome-text">محبوب ترین <span>انیمیشن ها</span></h2>
+              <span class="subtitle"
+                >بهترین سایت معرفی انیمیشن های روز دنیا</span
+              >
+            </div>
+
+            <div class="col-md-6 banner-left text-center">
+              <h4 class="newsletter-title">
+                با ما به روز باشید ،<span> ثبت نام کنید</span>
+              </h4>
+
+              <form id="mailchimp-form">
+                <div class="email-input">
+                  <input
+                    id="mailchimp-input"
+                    type="email"
+                    placeholder="ایمیل خود را وارد کنید"
+                  />
+                  <button class="email-submit" type="submit">
+                    <i class="fa fa-sign-in"></i>
+                  </button>
+                </div>
+              </form>
+
+              <div class="subscription-success"></div>
+              <div class="subscription-failed"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-wrap">
+      <div class="flex-container">
+          <div class="flex-item-right">
+            <div class="category">
+              <div class="items">
+                <div class="items-head">
+                  <p>فهرست انیمیشن ها</p>
+                  <hr />
+                </div>
+
+                <div class="items-body">
+                  <div class="items-body-content">
+                    <span>انیمیشن های سریالی</span>
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="items-body-content">
+                    <span>پر بیننده ترین ها</span>
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="items-body-content">
+                    <span>انیمیشن های نوستالژی</span>
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="items-body-content">
+                    <span>بهترین ها از نظر کاربران</span>
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-item-center section-title">
+            <a href="introduce.html">
+              <h3 class="black-border">
+                <span class="red-border"> موارد تازه</span
+                ><span class="red-bold">افزوده شده</span>
+              </h3>
+              <p>کلیک کن</p>
+            </a>
+
+            <!-- gg -->
+            <img src="pics/image-1.jpg" id="main" />
+            <div id="thumbnails">
+              <img src="pics/image-2.jpg" />
+              <img src="pics/image-3.jpg" />
+              <img src="pics/image-4.jpeg" />
+              <img src="pics/image-5.webp" />
+              <img src="pics/image-6.jpeg" />
+              <img src="pics/image-7.jpg" />
+            </div>
+          </div>
+          <div class="flex-item-left">
+            <p class="lead text-center" id="description">لطفا در نظرسنجی ما شرکت کنید</p>
+            <hr>
+            <form id="contact-form" action="survey.php" method="post" style="margin: 10px;">
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-user"></i>
+                </span>
+                <input
+                  id="name"
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="نام"
+                />
+              </div>
+
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-envelope-o"></i>
+                </span>
+                <input
+                  id="email"
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="پست الکترونیک"
+                />
+              </div>
+              <div class="col-md-12 form-item">
+                <p>میزان رضایت شما</p>
+                <span class="input-icon">
+                  <i class="fa fa-thumbs-up"></i>
+                </span>
+                <input type="radio" id="perfect" name="opinion" value="1">
+                <label for="pefect">عالی</label>
+                <input type="radio" id="good" name="opinion" value="2">
+                <label for="good">خوب</label>
+                <input type="radio" id="weak" name="opinion" value="3">
+                <label for="weak">ضعیف</label>
+              </div>
+              <div class="col-md-12 form-item">
+                <p>ژانر های محبوب شما:</p>
+                <span class="input-icon">
+                  <i class="fa fa-check"></i>
+                </span>
+                <input type="checkbox" name="cat1" value="comedy">
+                <label for="cat1">طنز و کمدی</label>
+                <input type="checkbox" name="cat2" value="faire">
+                <label for="cat2">ترسناک</label>
+                <input type="checkbox" name="cat3" value="sience" checked>
+                <label for="cat3">علمی تخیلی</label>
+              </div>
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-pencil-square-o"></i>
+                </span>
+                <textarea
+                  id="message"
+                  class="form-input"
+                  name="message"
+                  cols="30"
+                  rows="4"
+                  placeholder="پیشنهاد یا درخواست خود را در این قسمت بنویسید"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">
+                <span class="fa fa-paper-plane-o"></span> ارسال فرم نظرسنجی
+              </button>
+            </form>
+          </div>
+        
+      </div>
+    </section>
+
+    <nav>
+      <ul>
+        <li>
+          <div class="home-icon">
+            <div class="roof">
+              <div class="roof-edge"></div>
+            </div>
+            <div class="front"></div>
+          </div>
+        </li>
+        <li>
+          <div class="about-icon">
+            <div class="head">
+              <div class="eyes"></div>
+              <div class="beard"></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="work-icon">
+            <div class="paper"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+          </div>
+        </li>
+        <li>
+          <div class="mail-icon">
+            <div class="mail-base">
+              <div class="mail-top"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="section-about" class="achievement-wrap text-center">
+      <div class="achievement-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-title">
+            <h3 class="white-border">
+              <span class="red-border">درباره </span
+              ><span class="red-bold"> ما</span>
+            </h3>
+          </div>
+
+          <div class="col-md-3 achievement-box">
+            <div class="achievement">
+              1500
+              <span>انیمیشن</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 achievement-box">
+            <div class="achievement">
+              85
+              <span>کتگوری</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 achievement-box">
+            <div class="achievement">
+              12800
+              <span>کاربر راضی</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 achievement-box">
+            <div class="achievement">
+              60
+              <span>آموزش ها</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-contact" class="contact-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-title">
+            <h3 class="black-border">
+              <span class="red-border">ثبت نام</span
+              ><span class="red-bold"> در سایت ما</span>
+            </h3>
+          </div>
+
+          <div class="col-md-6 address-wrap">
+            <div class="address-item">
+              <span class="address-icon">
+                <i class="fa fa-mobile"></i>
+              </span>
+              <div class="address-desc">
+                <h4>پشتیبانی 7/24</h4>
+                <p>09394537977</p>
+              </div>
+            </div>
+
+            <div class="address-item">
+              <span class="address-icon">
+                <i class="fa fa-envelope-o"></i>
+              </span>
+              <div class="address-desc">
+                <h4>برای ما ایمیل بفرستید</h4>
+                <p>reazmoj.h@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="address-item">
+              <span class="address-icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              <div class="address-desc">
+                <h4>دفتر مرکزی</h4>
+                <p>زنجان | ایران</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 form-wrap">
+            <form id="contact-form" action="#">
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-user"></i>
+                </span>
+                <input
+                  id="name"
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="نام"
+                />
+              </div>
+
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-envelope-o"></i>
+                </span>
+                <input
+                  id="email"
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="پست الکترونیک"
+                />
+              </div>
+              <div class="col-md-12 form-item">
+                <span class="input-icon">
+                  <i class="fa fa-key"></i>
+                </span>
+                <input
+                  id="email"
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="پسورد"
+                />
+              </div>
+
+              <button type="submit" class="form-submit">
+                <span></span> ثبت نام
+              </button>
+            </form>
+
+            <div class="success-msg"><p></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="section-footer" class="footer-wrap text-center">
+      <div class="container">
+        <div class="col-md-12">
+          <p class="copyright-text">
+            <span>Jaximus</span> translated by
+            <a href="http://webrubik.com/" target="_blank">cartonio.com</a>
+            &copy; 2021 . All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="http://thecodeplayer.com/uploads/js/prefixfree.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
